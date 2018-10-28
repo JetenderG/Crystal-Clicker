@@ -56,8 +56,8 @@ var crystalgame = {
     "startover": function () {
         rndCpScore = crystalgame.rndCrystaknum();
         $(".userscore").html("0");
-        $(".win").html(win);
-        $(".loses").html(loss);
+        $(".win").html("Wins: " + win);
+        $(".loses").html("Loss: " + loss);
         $(".score").html(this.rndCpScore());
         userScore = 0;
 
@@ -67,6 +67,8 @@ var crystalgame = {
 };
 crystalgame.rndCrystaknum();
 crystalgame.rndCpScore();
+$(".win").html("Wins: ");
+$(".loses").html("Loss: ");
 
 $(".userscore").html(userScore);
 $(".score").html(spscore);
